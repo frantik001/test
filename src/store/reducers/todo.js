@@ -54,8 +54,6 @@ export default function todoReducer(state = initialState, action) {
         allIds: state.allIds.filter((todoId) => todoId !== id),
       };
     
-      delete newState.byIds[id];
-    
       return newState;
     }
 
